@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
+import {Accordion} from './components/Accordion/Accordion';
+import {Rating} from './components/Rating/Rating';
 
 function App() {
     console.log('App rendering')
@@ -23,10 +23,12 @@ function App() {
         </div>
     );
 }
+
 type PageTitlePropsType = {
     title: string
 }
-function PageTitle(props:PageTitlePropsType) {
+
+function PageTitle(props: PageTitlePropsType) {
     console.log('PageTitle rendering')
     return (
         <h1>{props.title}</h1>

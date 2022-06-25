@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
+
 type RatingPropsType = {
     value: 0 | 1 | 2 | 3 | 4 | 5
 }
-export function Rating(props:RatingPropsType) {
+
+export function Rating(props: RatingPropsType) {
     console.log('Rating rendering')
     if (props.value === 1) {
         return (
@@ -59,19 +61,21 @@ export function Rating(props:RatingPropsType) {
             </div>
         )
     }
-        return (
-            <div>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-                <Star selected={false}/>
-            </div>
-        )
+    return (
+        <div>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+        </div>
+    )
 }
+
 type StarPropsType = {
-    selected:boolean
+    selected: boolean
 }
+
 function Star(props: StarPropsType) {
     console.log('Star rendering')
     if (props.selected === true) {

@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
+
 type AccordionPropsType = {
     titleValue: string
 }
-export function Accordion(props:AccordionPropsType) {
+
+export function Accordion(props: AccordionPropsType) {
     console.log('Accordion rendering')
     return (
         <div>
@@ -12,7 +14,7 @@ export function Accordion(props:AccordionPropsType) {
     )
 }
 
-function AccordionTitle(props:any) {
+function AccordionTitle(props: any) {
     console.log('AccordionTitle rendering')
     return (
         <>
@@ -20,6 +22,7 @@ function AccordionTitle(props:any) {
         </>
     )
 }
+
 function AccordionBody() {
     console.log('AccordionBody rendering')
     return (
